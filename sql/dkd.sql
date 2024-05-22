@@ -666,7 +666,7 @@ CREATE TABLE `tb_vending_machine` (
   `latitude` double DEFAULT '0' COMMENT '维度',
   `create_time` datetime NOT NULL COMMENT '创建时间',
   `update_time` datetime DEFAULT NULL COMMENT '修改时间',
-  `running_status` varchar(100) DEFAULT '{"key": ''10002'',"value": ''异常''}' COMMENT '运行状态',
+  `running_status` varchar(100) DEFAULT NULL  COMMENT '运行状态',
   `policy_id` bigint DEFAULT NULL COMMENT '策略id',
   PRIMARY KEY (`id`),
   UNIQUE KEY `vendingmachine_VmId_uindex` (`inner_code`),
